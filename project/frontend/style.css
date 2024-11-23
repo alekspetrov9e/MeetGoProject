@@ -1,40 +1,76 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/concert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
-
-h1 {
-    text-align: center;
-    color: #333;
+.menu-container {
+    background-color: #e8ae14;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 80px;
 }
-
-.event {
-    background: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.menu-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
 }
-
-.event h2 {
-    color: #007BFF;
-    margin: 0;
+.homepage-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.register-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
+.event-feed {
     margin-top: 20px;
 }
-
-.register-button:hover {
-    background-color: #0056b3;
+.event-item {
+    background: #e9ce86;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.event-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+.event-item p {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 16px;
+}
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.menu-button {
+    /*margin-top: 20px;*/
+    padding: 12px 24px;
+    background-color: #e8ae14; /* Match button with gallery color */
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.menu-button:hover {
+    color: #e8ae14;
+    background-color: white; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */    
 }

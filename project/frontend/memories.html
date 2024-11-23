@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
 
-h1 {
-    color: #333;
-}
+      div.gallery {
+        color: #e8ae14;
+        font-weight: bold;
+        background-color: white;
+        margin: 15px;
+        float: left;
+        width: 200px;
+        border-radius: 6px;
+      }
 
-div.gallery {
-  margin: 15px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 200px;
-  border-radius: 4px;
-}
+      div.gallery:hover {
+        border: 1px solid #e8ae14;
+        background-color: #e8ae14;
+        color: white;
+      }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+      div.gallery img {
+        border-radius: 6px;
+        width: 100%;
+        height: auto;
+      }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+      div.desc {
+        padding: 25px;
+        text-align: center;
+      }
 
-div.desc {
-  padding: 25px;
-  text-align: center;
-}
+      button {
+        /*margin-left: 200px;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        padding: 20px 35px;
+        background-color: #e8ae14; /* Match button with gallery color */
+        color: white;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 4px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: all 0.3s ease; /* Smooth transition */ 
+      }
 
-button {
-    /*margin-top: 20px;*/
-    padding: 12px 24px;
-    background-color: white; /* Match button with gallery color */
-    color: black;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: all 0.3s ease; /* Smooth transition */
-}
+      button:hover {
+        font-weight: bold;
+        color: #e8ae14;
+        background-color: white; /* Slightly darker shade on hover */
+        transform: scale(1.05); /* Slight zoom effect on hover */ 
+      }
 
-button:hover {
-    background-color: gray; /* Slightly darker shade on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-</style>
+    </style>
 </head>
 <body>
+  <div class="menu-container">
+    <span class="menu-title">Memories</span>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/friends-selfie-1.jpg">
-    <img src="images/friends-selfie-1.jpg" alt="friends" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+  <div >
+    <button class="button">Add Photo</button>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/freinds_selfie_2.jpg">
-    <img src="images/freinds_selfie_2.jpg" alt="friends" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="images/friends-selfie-1.jpg">
+      <img src="images/friends-selfie-1.jpg" alt="friends" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/people_bonfire.jpg">
-    <img src="images/people_bonfire.jpg" alt="freinds" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="images/freinds_selfie_2.jpg">
+      <img src="images/freinds_selfie_2.jpg" alt="friends" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/people_sitting.jpg">
-    <img src="images/people_sitting.jpg" alt="freinds" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="images/people_bonfire.jpg">
+      <img src="images/people_bonfire.jpg" alt="freinds" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
-<div class="gallery">
-    <div class="desc">
-        <button class="button">Add Photo</button>
-    </div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="images/people_sitting.jpg">
+      <img src="images/people_sitting.jpg" alt="freinds" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
 </body>
 </html>
