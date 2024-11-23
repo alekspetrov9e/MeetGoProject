@@ -5,20 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Minimal styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://media.istockphoto.com/id/2163849478/de/foto/personalwesen-oder-online-besch%C3%A4ftigung.jpg?s=1024x1024&w=is&k=20&c=ngHjxhFe_J8mU3FszBsI8_e1HStBm8CNKy7TvORNIGQ=&p=1');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        label, input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input, select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Register for Social Events</h1>
     <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="categories">Select up to 3 categories:</label>
+        <select id="categories" name="categories" multiple size="6" required>
+            <option value="sports">Sports</option>
+            <option value="politics">Politics</option>
+            <option value="music">Music</option>
+            <option value="festivals">Festivals</option>
+            <option value="technology">Technology</option>
+            <option value="travel">Travel</option>
+        </select>
+
         <button type="submit">Register</button>
     </form>
 </body>
 </html>
+
