@@ -74,3 +74,12 @@ body {
     background-color: white; /* Slightly darker shade on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */    
 }
+
+div.outerHome {
+    position: fixed;
+    bottom: 20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
