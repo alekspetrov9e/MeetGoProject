@@ -6,35 +6,69 @@
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styling from previous version remains the same */
+        /* Specific styles for form layout in registration */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #e8ae14;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: white;
+            color: #e8ae14;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
+    <!-- Menu container -->
     <div class="menu-container">
         <span class="menu-title">Registration</span>
     </div>
-    <h1>Register for Social Events</h1>
-    <form action="homepage.html" method="GET">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <!-- Content container -->
+    <div class="homepage-container">
+        <h1>Register for Social Events</h1>
+        <form action="homepage.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <label for="categories">Select up to 3 categories:</label>
-        <select id="categories" name="categories" multiple size="6" required>
-            <option value="sports">Sports</option>
-            <option value="politics">Politics</option>
-            <option value="music">Music</option>
-            <option value="festivals">Festivals</option>
-            <option value="technology">Technology</option>
-            <option value="travel">Travel</option>
-        </select>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <button type="submit">Register</button>
-    </form>
+            <label for="categories">Select up to 3 categories:</label>
+            <select id="categories" name="categories" multiple size="6" required>
+                <option value="sports">Sports</option>
+                <option value="politics">Politics</option>
+                <option value="music">Music</option>
+                <option value="festivals">Festivals</option>
+                <option value="technology">Technology</option>
+                <option value="travel">Travel</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
 </html>
