@@ -6,15 +6,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your image */
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
         form {
             max-width: 400px;
             margin: 100px auto;
@@ -33,23 +24,13 @@
             border: none;
             border-radius: 5px;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #007BFF;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
+        
     </style>
 </head>
 <body>
-    <h1>Login</h1>
+    <div class="menu-container">
+        <span class="menu-title">Login</span>
+    </div>
     <form action="homepage.html" method="GET">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -57,7 +38,7 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit", class="menu-button">Login</button>
     </form>
 </body>
 </html>
