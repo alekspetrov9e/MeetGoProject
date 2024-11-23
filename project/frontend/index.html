@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Social Events</h1>
+    <div id="events-container">
+        <!-- Events will be dynamically loaded here -->
+    </div>
+    <script>
+        fetch('http://localhost:8080/api/events')
+            .then(response => response.json())
+            .then(events => {
+                const container = document.getElementById('events-container');
+                container.innerHTML = events.map(event => `
+                    <div class="event">
+                        <h2>${event.name}</h2>
+                        <p>${event.description}</p>
+                        <p><strong>Date:</strong> ${event.date}</p>
+                    </div>
+                `).join('');
+            })
+            .catch(error => console.error('Error fetching events:', error));
+    </script>
+</body>
+</html>
