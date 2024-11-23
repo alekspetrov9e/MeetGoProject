@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            background-color: #4CAF50;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .menu-title {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .homepage-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .event-feed {
+            margin-top: 20px;
+        }
+        .event-item {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .event-item h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .event-item p {
+            margin: 10px 0 0;
+            color: #555;
+            font-size: 16px;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .menu-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .menu-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <span class="menu-title">Homepage</span>
+    </div>
+    <div class="homepage-container">
+        <h2>Event Feed</h2>
+        <div class="event-feed">
+            <div class="event-item">
+                <h3>Yoga in the Park</h3>
+                <p>Join us for a relaxing yoga session at Central Park. Date: July 15th, Time: 10 AM</p>
+            </div>
+            <div class="event-item">
+                <h3>Cooking Workshop</h3>
+                <p>Learn to cook delicious meals with our talented chefs. Date: July 18th, Time: 5 PM</p>
+            </div>
+            <div class="event-item">
+                <h3>Community Cleanup</h3>
+                <p>Help us keep our community clean! Date: July 20th, Time: 9 AM</p>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <a href="#" class="menu-button">Memories</a>
+            <a href="#" class="menu-button">Ranking</a>
+            <a href="#" class="menu-button">Friends</a>
+            <a href="#" class="menu-button">My Events</a>
+        </div>
+    </div>
+</body>
+</html>
